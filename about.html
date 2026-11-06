@@ -1,65 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Klavi DevSpace - About</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header>
-        <div class="logo">
-            <h1>Klavi DevSpace</h1>
-        </div>
+      <div class="logo">
+        <h1>Klavi DevSpace</h1>
+      </div>
+      <div class="nav-container">
         <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About</a>
-            <a href="index.html#projects">Projects</a>
-            <a href="#contact">Contact</a>
+          <a href="index.html" data-i18n="navHome">Home</a>
+          <a href="about.html" class="active" data-i18n="navAbout">About</a>
+          <a href="index.html#projects" data-i18n="navProjects">Projects</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
         </nav>
+        <div class="controls-group">
+          <button id="themeToggle" class="ctrl-btn">🌙 Dark Mode</button>
+          <button id="langToggle" class="ctrl-btn">ID</button>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section class="about-detail">
-            <div class="section-title">
-                <h2>// TENTANG KLAVIAN</h2>
-            </div>
-            <div class="about-grid">
-                <div class="about-text">
-                    <h3>Sistem Profile v2.6</h3>
-                    <p>Halo! Saya Klavian, seorang Web Developer dan Game Designer yang terobsesi dengan estetika retro-futurisme, neon, serta interface sci-fi masa lalu.</p>
-                    <p>Memulai perjalanan coding sejak usia muda, saya berusaha menciptakan kombinasi sempurna antara desain visual yang berani dan arsitektur kode yang bersih.</p>
-                    
-                    <h3>Skill Matrix</h3>
-                    <ul class="skills-list">
-                        <li>HTML5 & CSS3 / Modern Layouting</li>
-                        <li>JavaScript (ES6+) & WebGL</li>
-                        <li>Game Design & Prototyping (Unity / C#)</li>
-                        <li>UI/UX Design & Retro Aesthetics</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+      <section class="about-detail">
+        <div class="section-title">
+          <h2 data-i18n="aboutPageTitle">// TENTANG KLAVIAN</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <h3 data-i18n="aboutSysProf">Sistem Profile v2.6</h3>
+            <p data-i18n="aboutText1">
+              Halo! Saya Klavian, seorang Web Developer dan Game Designer yang
+              terobsesi dengan estetika retro-futurisme, neon, serta interface
+              sci-fi masa lalu.
+            </p>
+            <p data-i18n="aboutText2">
+              Memulai perjalanan coding sejak usia muda, saya berusaha
+              menciptakan kombinasi sempurna antara desain visual yang berani
+              dan arsitektur kode yang bersih.
+            </p>
+
+            <h3 data-i18n="skillMatrixTitle">Skill Matrix</h3>
+            <ul class="skills-list">
+              <li>HTML5 & CSS3 / Modern Layouting</li>
+              <li>JavaScript (ES6+) & WebGL</li>
+              <li>Game Design & Prototyping (Unity / C#)</li>
+              <li>UI/UX Design & Retro Aesthetics</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer id="contact">
-        <p>Dibuat oleh <strong>Klavian</strong> tahun 2026 &copy; Klavi DevSpace</p>
-        <div class="social-links">
-            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
-            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
-            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2504/2504953.png" alt="Threads"></a>
-            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"></a>
-            <a href="#" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn"></a>
-        </div>
+      <p data-i18n="footerText">
+        Dibuat oleh <strong>Klavian</strong> tahun 2026 &copy; Klavi DevSpace
+      </p>
+      <div class="social-links">
+        <a href="#" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png"
+            alt="Instagram"
+        /></a>
+        <a href="#" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+            alt="WhatsApp"
+        /></a>
+        <a href="#" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/2504/2504953.png"
+            alt="Threads"
+        /></a>
+        <a href="#" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+            alt="GitHub"
+        /></a>
+        <a href="#" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png"
+            alt="LinkedIn"
+        /></a>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <!-- Tombol Scroll to Top -->
+    <button id="scrollToTop" title="Scroll to Top">▲</button>
 
+    <script src="script.js"></script>
+  </body>
 </html>
